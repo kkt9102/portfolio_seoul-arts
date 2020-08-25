@@ -166,7 +166,11 @@ function slick() {
     });
 }
 
-
+function alerted(){
+	$('.alerted > .alert-box > .close-btn > .close-text').click(function(){
+		$('.alerted').removeClass('active');
+	})
+}
 
 $(function () {
     main_slider();
@@ -174,4 +178,5 @@ $(function () {
     tap_menu();
     drop_menu();
     slick();
+    alerted();
 })
